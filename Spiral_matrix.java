@@ -25,26 +25,13 @@ public class Spiral_matrix
             //bottom
             for(int i=end_col-1;i>=start_col;i--)
             {
-                /*when it comes to odd matrix the there can be issue where there is 
-                only one element left so it will be printed in top row loop then again 
-                in bottom row loop so to avoid duplicatiob we write this condition
-                */
-                if(start_row==end_row)
-                {
-                    return;
-                }
                 System.out.print(matrix[end_row][i]+" ");
             }
 
             //left
             for(int j=end_row-1;j>=start_row+1;j--)
             {
-                //as mentioned earlier to avoid duplication of both columns we write this
-                if(start_col==end_col)
-                {
-                    return;
-                }
-                System.out.print(matrix[j][start_col]+" ");
+                System.out.print(matrix[j][start_row]+" ");
             }
 
             start_row++;
