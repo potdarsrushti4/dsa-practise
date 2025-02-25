@@ -3,7 +3,7 @@ public class Max_subarray_sum{
     public static void Max_subarray_sum(int[] arr)
     {
         int maxSum = Integer.MIN_VALUE;
-        int currSum = 0;
+        int currSum ;
 
         for(int i = 0; i<arr.length ; i++)
         {
