@@ -1,8 +1,3 @@
-
-
-
-
-
 public class Trapped_rainwater{
 
     public static int calculateTrappedWater(int height[])
@@ -26,7 +21,6 @@ public class Trapped_rainwater{
             
         }
         
-        
         int trappedWater  = 0;
         for (int i=0 ; i<n ; i++)
         {
@@ -39,11 +33,9 @@ public class Trapped_rainwater{
         }
 
         return trappedWater;
-        
     }
     public static void main(String[] args) {
         int height[] = {4,2,0,6,3,2,5};
-
         int result = calculateTrappedWater(height);
         System.out.println(result);
     }
